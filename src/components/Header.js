@@ -5,7 +5,7 @@ function Header(){
     return(
         <header className="header">
             <div className="overlay">
-            <h1>Toko Kami</h1>
+            <h1>Coffee Shop Example</h1>
             <nav>
                 <a href="#about">About Us</a>
                 <a href="#menu">Our Coffee</a>
