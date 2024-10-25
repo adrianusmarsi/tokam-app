@@ -1,0 +1,45 @@
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.menu-item {
+    text-align: center;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item input {
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Styling tombol pesan */
+.order-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+  
+.order-button:disabled {
+    background-color: #ccc; /* Warna tombol saat dinonaktifkan */
+    cursor: not-allowed;
+}

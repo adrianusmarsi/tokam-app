@@ -1,38 +1,76 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+section  {
+  padding: 40px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  transition: background-color 0.3s ease;
+}
+
+.App.dark {
+  background-color: #1e1e1e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button.toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  z-index: 1000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button.toggle-dark-mode:hover {
+  background-color: #555;
+}
+
+/* Styling untuk dark mode pada komponen lainnya */
+.App.dark header, 
+.App.dark footer {
+  background-color: #333;
+  color: white;
+}
+
+.App.dark nav a {
+  color: #ccc;
 }

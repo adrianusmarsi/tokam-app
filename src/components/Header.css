@@ -1,0 +1,29 @@
+.header {
+    background-image: url('/public/images/tokam.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
